@@ -1,24 +1,50 @@
-<head>  
-    <link rel="stylesheet" href="sidebar.css">
-</head>
-<nav class="menu" tabindex="0">
-	<div class="smartphone-menu-trigger"></div>
-  <header class="avatar">
-		<img src="photoB1.png" />
-    <h2>John D.</h2>
-  </header>
-	<ul>
-    <li> <a href="CV_Jean_Vallee_202011_m2i_1p.pdf" target="canvas">CV</a> </li>
-    <li tabindex="0" class="icon-dashboard"><span>Dashboard</span></li>
-    <li tabindex="0" class="icon-customers"><span>Customers</span></li>
-    <li tabindex="0" class="icon-users"><span>Users</span></li>
-    <li tabindex="0" class="icon-settings"><span>Settings</span></li>
-  </ul>
-</nav>
 
-<main>
-  <div id="canvas" class="helper">
-    RESIZE THE WINDOW
-		<span>Breakpoints on 900px and 400px</span>
-  </div>
-</main>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+	<head>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+		<title>Example page</title>
+
+	</head>
+	
+	<frameset cols="150,*">
+
+		<frame src="nav.html" name="side">
+
+		<frameset rows="150,*">
+			<frame src="example_t04b.html" name="top">
+			<frame src="example_t04c.html" name="main">
+		</frameset>
+
+		<noframes>
+			<body>
+				<h1>Frame example page</h1>
+				<p><a href="index.html">Frame index</a></p>
+			</body>
+		</noframes>
+
+	</frameset>
+
+</html>
+
+				<!--object
+					data='http://jeanrosselvallee.github.io/CV_Jean_Vallee_202011_m2i_1p.pdf'
+					type="application/pdf"
+					width="500"
+					height="678"
+				>
+
+					<iframe name="canvas"
+						src='http://jeanrosselvallee.github.io/CV_Jean_Vallee_202011_m2i_1p.pdf'
+						width="500"
+						height="678"
+					>
+						<p>This browser does not support PDF!</p>
+					</iframe>
+
+				</object>--
+
+
+
