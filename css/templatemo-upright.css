@@ -27,7 +27,6 @@ https://templatemo.com/tm-555-upright
 	--button-color: #FFCE1E;
 	--hover-color: 	#FC8408;
 	--text-color: 	#FFFFFF;
-	--cursor-color:	#F9F9F9;
 	--sidebar-color:#011E54;
 }
 
@@ -526,11 +525,17 @@ figure.effect-honey:hover ul li a {
 	color: white;
 }
 
-.fab { transition: all 0.3s ease; }
-.tm-social-link:hover .fa-instagram { color: #8134AF; }
-.tm-social-link:hover .fa-facebook { color: #3b5998; }
-.tm-social-link:hover .fa-twitter { color:  #00acee; }
-.tm-social-link:hover .fa-youtube { color: #c4302b; }
+.fab { 
+	transition: all 0.3s ease;
+	font-size: 2rem;
+}
+.tm-social-link:hover { color: #FFFFFF; }
+.fa-instagram 	{ color: #8134AF; }
+.fa-facebook 	{ color: #3b5998; }
+.fa-twitter 	{ color:  #00acee; }
+.fa-youtube 	{ color: #c4302b; }
+.fa-linkedin 	{ color: #00acee; }
+.fa-copyright 	{ color: var(--button-color); }
 
 .slick-dots {
 	position: static;
@@ -735,8 +740,8 @@ select:not([multiple]) {
 		position: fixed;
 		left: 0;
 		top: 0;
-		background-color: rgb(0 102 153 / 0.80);
-		color: white;
+		background-color:  var(--button-color); 
+		color:  var(--sidebar-color); 
 		padding: 10px 15px;
 		transition: all 0.3s ease;
 		border-radius: 0;
