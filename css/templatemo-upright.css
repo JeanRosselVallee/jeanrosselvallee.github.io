@@ -578,6 +578,10 @@ figure.effect-honey:hover ul li a {
 	padding-left: 15px;
 	padding-right: 15px;
 	max-width: 300px;
+
+	border:1px; 
+	border-color:gray;
+	border-style:solid;
 }
 
 .tm-carousel figure {
