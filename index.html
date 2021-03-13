@@ -28,6 +28,8 @@ TODO:
     <style data-linaria-critical="/embed-jsfiddle-code-web-pages/"></style>
     <link rel="canonical" key="https://www.sitepoint.com/embed-jsfiddle-code-web-pages/" href="https://www.sitepoint.com/embed-jsfiddle-code-web-pages/" data-react-helmet="true">
 
+    <link rel="stylesheet" href="css/portfolio.css">
+
 </head>
 <!--------------------------------------------------------------------------------------- HEAD end ------->
 
@@ -48,7 +50,7 @@ TODO:
                             <div><img src="img/avatar.png" class="avatar" alt="Avatar"/></div>           
                             <div class="my-name">Jean VALLEE</div>  
                         </div>
-                        <br><hr>
+                        <hr class="tm-hr-short">
 
                         <!------------------------------------------------------------- LABELS begin ----->           
                         <ul id="tm-main-nav">
@@ -62,15 +64,15 @@ TODO:
                             <li class="nav-item">
                                 <a href="#gallery" class="nav-link">
                                     <div class="triangle-right"></div>
-                                    <i class="fas fa-images nav-icon"></i>
-                                    Gallery
+                                    <i class="fas fa-chart-bar nav-icon"></i>
+                                    Projects
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a href="#about" class="nav-link">
                                     <div class="triangle-right"></div>
-                                    <i class="fas fa-scroll nav-icon"></i>
-                                    CVs
+                                    <i class="fas fa-user nav-icon"></i>
+                                    About
                                 </a>
                             </li>
                         </ul>
@@ -102,7 +104,20 @@ TODO:
                                 </a>
                             </li>
 
+                            <li>
+                                <a href="https://https://github.com/JeanRosselVallee/" class="tm-social-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://www.codingame.com/profile/31fb1010c1a7ec76cd36dc9208b34d202526552/achievements" class="tm-social-link">
+                                    <img src="img/codingame.svg" width=75%></i>
+                                </a>
+                            </li>
+
                         </ul>
+                        
                     </footer>
 
                 </nav>
@@ -116,8 +131,12 @@ TODO:
                 <div class="tm-section-wrap">
                     <!-- <div class="tm-parallax" data-parallax="scroll" data-image-src="img/img-01.jpg"></div>                    -->
                     <section id="home" class="tm-section">
-                        <h2 class="tm-text-primary">&nbsp&nbsp&nbsp Jean's Portfolio in Big Data </h2>
-                        <hr class="mb-5">
+                        <h2 class="tm-text-primary">&nbsp&nbsp&nbsp Big Data Portfolio </h2>
+                        <hr class="tm-hr-long mb-5">
+                                <p>
+                                    <h4>Welcome!</h4> You will find here a series of projects and tips to introduce you to Big Data.
+                                    <br> Feel free to contact me for more information.
+                                </p>
                         <div class="row">
                             <div class="col-lg-6 tm-col-home mb-4">
                                 <div class="tm-text-container">
@@ -129,18 +148,18 @@ TODO:
                                 </div>                                
                             </div>
                             <div class="col-lg-6 tm-col-home mb-4">
-                                <p>
-                                    Welcome! You will find here a series of projects and tips to introduce you to Big Data.
-                                    Feel free to contact me for more information.
-                                </p>
                                 <div class="tm-text-container">
                                     <div class="text-right">
-                                        <a href="#gallery" class="btn btn-primary tm-btn-next">View the projects</a>
+                                        <a href="#gallery" class="btn btn-primary tm-btn-next">View Projects</a>
                                     </div>                                    
                                 </div>
+                                <div>
+                                    <br><br>
+                                    <cite><q>If you can't explain it simply, you don't understand it well enough.</q> Albert Einstein</cite>
+                                </div>
+                                <hr class="tm-hr-short mb-5">
                             </div>
                         </div>
-                        <hr class="tm-hr-short mb-5">
                     </section>
                 </div>
                 <!--================================================================ GALLERY section ===-->
@@ -158,31 +177,31 @@ TODO:
                                     All
                                 </a>
                             </li>
-                            <li>
+                            <li title="Extraction-Transformation-Loading data processing">
                                 <a href="javascript:void(0);" class="tm-gallery-link" data-filter="extrlo">
                                     <i class="fas fa-network-wired tm-gallery-link-icon"></i>
                                     ETL
                                 </a>
                             </li>
-                            <li>
+                            <li title="Data Visualisation">
                                 <a href="javascript:void(0);" class="tm-gallery-link" data-filter="visualisation">
                                     <i class="fas fa-chart-bar tm-gallery-link-icon"></i>
                                     Viz
                                 </a>
                             </li>
-                            <li>
+                            <li title="Not Only SQL databases">
                                 <a href="javascript:void(0);" class="tm-gallery-link" data-filter="nosql">
                                     <i class="fas fa-database tm-gallery-link-icon"></i>
                                     NoSQL
                                 </a>
                             </li>
-                            <li>
+                            <li title="tips on how to use Data tools">
                                 <a href="javascript:void(0);" class="tm-gallery-link" data-filter="tips">
                                     <i class="fas fa-lightbulb tm-gallery-link-icon"></i>
                                     Tips
                                 </a>
                             </li>
-                            <li>
+                            <li title="a notebook contains text, code in Python and results as tables and graphs">
                                 <a href="javascript:void(0);" class="tm-gallery-link" data-filter="notebooks">
                                     <i class="fas fa-scroll tm-gallery-link-icon"></i>
                                     Notebooks
@@ -283,87 +302,209 @@ TODO:
 
                         </div>
                     </section>
+                    <ul>
+                        <li><b>ETL</b>: Extraction-Transformation-Loading data processing</li>
+                        <li><b>Viz</b>: Data Visualisation</li>
+                        <li><b>NoSQL</b>: Not Only SQL databases</li>
+                        <li><b>Notebooks</b>: a notebook contains text, code in Python and results as tables and graphs</li>
+                    </ul>
                 </div>
                 <!--================================================================== ABOUT section ===-->
                 <div class="tm-section-wrap">
                     <section id="about" class="tm-section">
-                        <h2 class="tm-text-primary">&nbsp&nbsp&nbsp CVs</h2>
+                        <h2 class="tm-text-primary">&nbsp&nbsp&nbsp CV - Data Engineer</h2>
                         <hr class="mb-5">
+
+                        <div class="row">
+                            <div class="col-xl-6 tm-contact-col-l mb-4">
+                                <ul class="tm-contact-social">
+                                    <li>                               <!--======= Social Links ===-->
+                                        <a href="mailto:jean.vallee@gmx.fr">
+                                            <img src="img/mail.png">
+                                        </a>   
+                                    </li>&nbsp
+                                    <li>
+                                        <a href="https://www.linkedin.com/in/jean-vallee-big-data/?locale=fr_FR" class="tm-social-link">
+                                            <i class="fab fa-linkedin"></i>  
+                                        </a> 
+                                    </li>
+                                    <li>
+                                        <a href="https://fb.com/templatemo" class="tm-social-link">
+                                            <i class="fab fa-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://twitter.com" class="tm-social-link">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://https://github.com/JeanRosselVallee/" class="tm-social-link">
+                                            <i class="fab fa-github"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.codingame.com/profile/31fb1010c1a7ec76cd36dc9208b34d202526552/achievements" class="tm-social-link">
+                                            <img src="img/codingame.svg" width=75%></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                        <div class="row tm-row-about">
+
+                            <div class="col-lg-6 tm-col-home mb-4">
+                                <div class="tm-text-container">
+                                    <div>
+                                        <img src="img/The Data Lab MSc - Placement Stories-JV12.gif" width=100%>
+                                    </div>   
+                                </div>                                
+                            </div>
+
+                            <div class="row tm-row-about">
+                                <div class="cv-p col-xl-6 tm-contact-col-l mb-4">
+                                    <h5 class="cv-heading">&nbsp Courte biographie</h5>
+                                    &nbsp Je suis né au <b class=cv-name>Pérou</b> et suis venu en France pour suivre des études supérieures.
+                                    <br>
+                                    &nbsp Après avoir travaillé pour <b class=cv-name>3 ESN</b> et intégré différentes équipes, 
+                                    je souhaite travailler sur des projets innovateurs et complexes du <b class=cv-name>Big Data</b> 
+                                    et contribuer à la simplification et à l’automatisation de tâches.
+                                    <br>
+                                    &nbsp Passionné par la <b class=cv-name>programmation</b>, j’aime trouver des solutions optimales, 
+                                    apprendre et m’améliorer en permanence.
+                                </div>
+
+                                <div class="cv-p col-xl-6 tm-contact-col-l mb-4">
+                                    <h5 class="cv-heading">&nbsp Personnel</h5>
+                                    <h2> &nbsp &nbsp &nbsp &#127955; &#127939; &#127946; &#129354; &#129406; &#127969; </h2>
+                                    <br>
+                                    &nbsp Pour contre-balancer le travail sédentaire, j’aime pratiquer des sports dynamiques 
+                                    comme la course à pied et les sports de combat. 
+                                    <br>
+                                    &nbsp Lorsque j’ai un peu de temps libre, j’aime aller dans la nature en famille ou 
+                                    m’occuper de mon jardin et de la rénovation de ma maison.
+                                </div>
+
+                                <div class="cv-p col-xl-6 tm-contact-col-l mb-4">
+                                    <h5 class="cv-heading">&nbsp Formation</h5>
+                                    <p>
+                                        <b class=cv-date>2020-2021</b><br>
+                                        <a href="https://www.m2iformation.fr/actualite/formation-big-data-intelligence-artificielle-300919/">
+                                            <u class=cv-name>Consultant Big Data</u><br>
+                                        </a>
+                                        M2I Formation, Montpellier
+                                    </p>
+                                    <p>
+                                        <b class=cv-date>2016</b><br>
+                                        <a href="https://www.dundee.ac.uk/postgraduate/data-engineering">
+                                            <u class=cv-name>MSc Big Data Engineering</u><br>
+                                        </a>
+                                        Université de Dundee, Ecosse
+                                    </p>
+                                    <p>
+                                        <b class=cv-date>2003</b><br>
+                                        <a href="https://www.imt-atlantique.fr/fr/documents/fiche-mastere-specialise-ingenierie-des-systemes-informatiques-communicants">
+                                            <u class=cv-name>MS Ingénierie de Systèmes Communicants</u><br>
+                                        </a>
+                                        IMT Atlantique – Brest
+                                    </p>
+                                    <p>
+                                        <b class=cv-date>1997</b><br>
+                                        <a href="https://www.ece.fr/ecole-ingenieur/ece-paris/">
+                                            <u class=cv-name>Diplôme d'ingénieur</u><br>
+                                        </a>
+                                        ECE – Paris
+                                    </p>
+                                </div>
+
+                                <div class="cv-p col-xl-6 tm-contact-col-l mb-4">
+                                    <h5 class="cv-heading">&nbsp Expérience  &nbsp &nbsp &nbsp
+                                        <img src="img/capgemini.svg" class="cv-logo" width=100px>&nbsp
+                                        <img src="img/gfi.png" class="cv-logo" width=50px> 
+                                    </h5>
+                                    <p>
+                                        <b class=cv-date>2018-2019</b>
+                                        <br>ESN 
+                                        <a href="https://www.linkedin.com/company/gfiworld/">
+                                            <u class=cv-name> GFI</u><br>
+                                        </a>
+                                        DEVELOPPEUR Web
+                                    </p>
+                                    <p>
+                                        <b class=cv-date>2016</b><br>Stage chez 
+                                        <a href="https://waracle.com/locations/dundee/">
+                                            <u class=cv-name>Waracle</u><br>
+                                        </a>
+                                        DÉVELOPPEUR en Data Viz
+                                    </p>
+                                    <p>
+                                        <b class=cv-date>2013-2015</b>
+                                        <br>ESN 
+                                        <a href="https://www.linkedin.com/company/uniware-global-services/">
+                                            <u class=cv-name> Uniware &nbsp</u><br>
+                                        </a>
+                                        CONSULTANT polyvalent
+                                    </p>
+                                    <p>
+                                        <b class=cv-date>2011</b><br>Stage chez 
+                                        <a href="https://www.augeo.com/fr/produits#section-planzone">
+                                            <u class=cv-name> Augeo</u><br>
+                                        </a>
+                                        DÉVELOPPEUR en Javascript
+                                    </p>
+                                    <p>
+                                        <b class=cv-date>1998-2009</b>
+                                        <br>ESN 
+                                        <a href="https://www.linkedin.com/company/capgemini/">
+                                            <u class=cv-name>Cap Gemini &nbsp</u><br>
+                                        </a>
+                                        CONSULTANT polyvalent
+                                    </p>
+                                </div>
+                            </div>
 
                             <div class="tm-carousel">
                                 <div class="tm-carousel-item">
                                     <figure class="effect-honey tm-gallery-item tips">
-                                        <img src="img/CV_LinkedIn.jpg" alt="Image"/>
+                                        <img src="img/The Data Lab MSc - Placement Stories-JV1.gif" alt="Image"/>
                                         <figcaption>
-                                            <h2><i>View CV</i></h2>
-                                            <a href="img/CV_LinkedIn.jpg">View more</a>
+                                            <h2><i>View Languages</i></h2>
+                                            <a href="img/The Data Lab MSc - Placement Stories-JV1.gif">View more</a>
+                                        </figcaption>           
+                                    </figure> 
+                                </div>
+                                <div class="tm-carousel-item">
+                                    <figure class="effect-honey tm-gallery-item tips">
+                                        <img src="img/skills.jpg" alt="Image"/>
+                                        <figcaption>
+                                            <h2><i>View Skills</i></h2>
+                                            <a href="img/skills.jpg">View more</a>
+                                        </figcaption>           
+                                    </figure> 
+                                </div>
+                                <div class="tm-carousel-item">
+                                    <figure class="effect-honey tm-gallery-item tips">
+                                        <img src="img/programming.jpg" alt="Image"/>
+                                        <figcaption>
+                                            <h2><i>View Programming Languages</i></h2>
+                                            <a href="img/programming.jpg">View more</a>
+                                        </figcaption>           
+                                    </figure> 
+                                </div>
+                                <div class="tm-carousel-item">
+                                    <figure class="effect-honey tm-gallery-item tips">
+                                        <img src="img/tongues.jpg" alt="Image"/>
+                                        <figcaption>
+                                            <h2><i>View Languages</i></h2>
+                                            <a href="img/tongues.jpg">View more</a>
                                         </figcaption>           
                                     </figure> 
                                 </div>
                             </div>
-
-                        
-                        <hr class="mb-5">
-                        <div class="row tm-row-about">
-
-                            
-
-                            <hr class="mb-5">
-                            <div class="row">
-
-                                <div class="col-xl-6 tm-contact-col-l mb-4">
-                                    <!--======== E-mail ===-->
-                                            <a href="mailto:jean.vallee@gmx.fr">
-                                                <i class="fas fa-at mr-2 tm-contact-link-icon"></i>
-                                                Email: jean.vallee@gmx.fr
-                                            </a>
-                                </div>
-                                <div class="col-xl-6 tm-contact-col-l mb-4">
-                                    <!--==== Send Email ===-->
-                                    <form   id="contact-form"
-                                            action="mailto:jean.vallee@gmx.fr?subject=[JV_Portfolio]" 
-                                            method="POST" 
-                                            class="tm-contact-form">
-                                        <div class="form-group tm-text-right">
-                                            <button type="submit" class="btn btn-primary">Write an email</button>
-                                        </div>
-                                    </form>
-                                
-                                </div>
-                                <div class="col-xl-6 tm-contact-col-l mb-4">    
-                                    <ul class="tm-contact-social">              <!--======= Social Links ===-->
-
-                                        <li>
-                                            <a href="https://www.linkedin.com/in/jean-vallee-big-data/?locale=fr_FR" class="tm-social-link">
-                                                <i class="fab fa-linkedin"></i>     
-                                            </a>           <!-- cf. https://fontawesome.com/icons?d=gallery -->
-                                        </li>
-
-                                        <li>
-                                            <a href="https://fb.com/templatemo" class="tm-social-link">
-                                                <i class="fab fa-facebook"></i>
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="https://twitter.com" class="tm-social-link">
-                                                <i class="fab fa-twitter"></i>
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="https://youtube.com" class="tm-social-link">
-                                                <i class="fab fa-youtube"></i>
-                                            </a>
-                                        </li>
-
-                                    </ul>
-
-                                </div>
-
-
-                            </div>
                         </div>
+
                     </section>
 
                 </div>

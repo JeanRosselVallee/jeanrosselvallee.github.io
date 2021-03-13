@@ -1,0 +1,32 @@
+/*
+TODO: 
+*/
+
+:root {
+	--bg-color:		#000000;
+	--button-color: #FFCE1E;
+	--hover-color: 	#FC8408;
+	--text-color: 	#FFFFFF;
+	--blue-jeans:	#011E54;
+}
+.cv-heading { 
+	/* font-family: 'Kumbh Sans', sans-serif; */
+	background-color: #ffc107; /* #0264b5; */
+	font-weight: bold;
+	color: #000000;
+	padding: 3px;
+	margin-top: 10px;
+}
+.cv-p { 
+    background: var(--blue-jeans);
+}
+.cv-date { 
+	/*color: #8cf4ff; */
+}
+.cv-name { 
+	color: #8cf4ff; 
+}
+
+.cv-logo { 
+	vertical-align: middle; 
+}
