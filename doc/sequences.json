@@ -129,6 +129,52 @@
                "size":1
             }
          ]
+      },
+      {
+         "name":"Programming",
+         "children":[
+            {
+               "name":"Script Linux",
+               "size":1
+            },
+            {
+               "name":"Python",
+               "size":1
+            },
+            {
+               "name":"SQL",
+               "size":1
+            },
+            {
+               "name":"Javascript",
+               "size":1
+            },
+            {
+               "name":"Java",
+               "size":1
+            },
+            {
+               "name":"C",
+               "size":1
+            }
+         ]
+      },
+      {
+         "name":"Languages",
+         "children":[
+            {
+               "name":"French",
+               "size":1
+            },
+            {
+               "name":"Spanish",
+               "size":1
+            },
+            {
+               "name":"English",
+               "size":1
+            }
+         ]
       }
    ]
 }
