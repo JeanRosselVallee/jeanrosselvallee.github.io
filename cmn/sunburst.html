@@ -27,7 +27,7 @@
             .startAngle(d => x(d.x0))
             .endAngle(d => x(d.x1))
             .innerRadius(d => Math.max(0, y(d.y0)))
-            .outerRadius(d => Math.max(0, y(d.y1)));
+            .outerRadius(d => Math.max(0, y(d.y1))/2);
 
         const middleArcLine = d => {
             const halfPi = Math.PI/2;
