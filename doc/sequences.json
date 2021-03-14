@@ -6,15 +6,15 @@
          "children":[
             {
                "name":"Windows",
-               "size":33
+               "size":1
             },
             {
                "name":"Unix",
-               "size":33
+               "size":1
             },
             {
                "name":"Linux",
-               "size":33
+               "size":1
             }
          ]
       },
@@ -26,15 +26,15 @@
                "children":[
                   {
                      "name":"Oracle",
-                     "size":16
+                     "size":1
                   },
                   {
                      "name":"Sybase",
-                     "size":16
+                     "size":1
                   },
                   {
                      "name":"SQL Server",
-                     "size":16
+                     "size":1
                   }
                ]
             },
@@ -43,15 +43,15 @@
                "children":[
                   {
                      "name":"MongoDb",
-                     "size":16
+                     "size":1
                   },
                   {
                      "name":"HBase",
-                     "size":16
+                     "size":1
                   },
                   {
                      "name":"Neo4j",
-                     "size":16
+                     "size":1
                   }
                ]
             }
@@ -62,19 +62,19 @@
          "children":[
             {
                "name":"Talend",
-               "size":25
+               "size":1
             },
             {
                "name":"SSIS",
-               "size":25
+               "size":1
             },
             {
                "name":"Spark",
-               "size":25
+               "size":1
             },
             {
                "name":"HDFS",
-               "size":25
+               "size":1
             }
          ]
       },
@@ -83,7 +83,7 @@
          "children":[
             {
                "name":"Agile",
-               "size":100
+               "size":1
             }
          ]
       },
@@ -92,7 +92,7 @@
          "children":[
             {
                "name":"Splunk",
-               "size":100
+               "size":1
             }
          ]
       },
@@ -101,11 +101,11 @@
          "children":[
             {
                "name":"Excel",
-               "size":50
+               "size":1
             },
             {
                "name":"Google Sheets",
-               "size":50
+               "size":1
             }
          ]
       },
@@ -114,19 +114,19 @@
          "children":[
             {
                "name":"Google Data Studio",
-               "size":25
+               "size":1
             },
             {
                "name":"Qlik Sense",
-               "size":25
+               "size":1
             },
             {
                "name":"Tableau",
-               "size":25
+               "size":1
             },
             {
                "name":"Power BI",
-               "size":25
+               "size":1
             }
          ]
       }

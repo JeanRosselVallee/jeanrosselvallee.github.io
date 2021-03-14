@@ -23,6 +23,5 @@ body {
 }
 
 textPath {
-  stroke-width: 0 !important; 
   font-weight: bold;
 }

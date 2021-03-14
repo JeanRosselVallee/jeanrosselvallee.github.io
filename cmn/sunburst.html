@@ -27,7 +27,7 @@
             .startAngle(d => x(d.x0))
             .endAngle(d => x(d.x1))
             .innerRadius(d => Math.max(0, y(d.y0)))
-            .outerRadius(d => Math.max(0, y(d.y1))/2);
+            .outerRadius(d => Math.max(0, y(d.y1)));
 
         const middleArcLine = d => {
             const halfPi = Math.PI/2;
@@ -99,10 +99,7 @@
                 .attr('startOffset','50%')
                 .attr('xlink:href', (_, i) => `#hiddenArc${i}` )
                 .text(d => d.data.name)
-                .style('fill', 'none')
-                .style('stroke', '#fff')
-                .style('stroke-width', 5)
-                .style('stroke-linejoin', 'round');
+                .style('fill', 'none');
 
             text.append('textPath')
                 .attr('startOffset','50%')
