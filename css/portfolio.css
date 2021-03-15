@@ -31,3 +31,16 @@ TODO:
 	vertical-align: middle; 
 }
 
+
+.cv-img {
+}
+
+
+@media (min-width : 1200px) {
+	.tm-carousel {
+		position: absolute;
+		left: 300px;
+		top: 250px;
+		z-index: 1;
+	}
+}

@@ -1,0 +1,49 @@
+body {
+  font-family: Sans-serif;
+  font-size: 1em;
+  background-color: black;
+}
+
+.slice {
+  cursor: pointer;
+}
+
+.slice .main-arc {
+  stroke: #000;
+  stroke-width: 0.8px;
+}
+
+.slice .hidden-arc {
+  fill: none;
+}
+
+.slice text {
+  pointer-events: none;
+  dominant-baseline: middle;
+  text-anchor: middle;
+}
+
+textPath {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+#sunburst1 {
+  height: 100%;
+  text-align: left;
+}
+
+@media (max-device-width : 450px) {
+  textPath {
+    font-size: 0.8em;
+    font-weight: lighter;
+  }
+  .slice .main-arc {
+    stroke: #000;
+    stroke-width: 0.4px;
+  }
+  #sunburst1 {
+    height: 100%;
+  }
+
+}
