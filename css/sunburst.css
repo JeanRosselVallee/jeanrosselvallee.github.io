@@ -40,7 +40,7 @@ textPath {
   }
   .slice .main-arc {
     stroke: #000;
-    stroke-width: 0.4px;
+    stroke-width: 2px;
   }
   #sunburst1 {
     height: 100%;
