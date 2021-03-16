@@ -41,8 +41,8 @@
 {"name":"Qlik Sense", "size": 1},
 {"name":"Tableau", "size": 1},
 {"name":"Power BI", "size": 1}
-]},
 ]}
+]},
 {"name":"Programming"
 ,"children": [
 {"name":"Script"
