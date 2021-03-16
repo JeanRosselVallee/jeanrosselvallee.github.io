@@ -8,20 +8,17 @@
 ]},
 {"name":"Data"
 ,"children": [
-{"name":"DB"
-,"children": [
-{"name":"SQL"
+{"name":"DB SQL"
 ,"children": [
 {"name":"Oracle", "size": 1},
 {"name":"Sybase", "size": 1},
 {"name":"SQL Server", "size": 1}
 ]},
-{"name":"NoSQL"
+{"name":"DB NoSQL"
 ,"children": [
 {"name":"MongoDb", "size": 1},
 {"name":"HBase", "size": 1},
 {"name":"Neo4j", "size": 1}
-]}
 ]},
 {"name":"ETL"
 ,"children": [
