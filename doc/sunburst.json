@@ -1,0 +1,90 @@
+{"name":"Skills"
+,"children": [
+{"name":"OS"
+,"children": [
+{"name":"Windows", "size": 1},
+{"name":"Unix", "size": 1},
+{"name":"Linux", "size": 1}
+]},
+{"name":"Data"
+,"children": [
+{"name":"DB"
+,"children": [
+{"name":"SQL"
+,"children": [
+{"name":"Oracle", "size": 1},
+{"name":"Sybase", "size": 1},
+{"name":"SQL Server", "size": 1}
+]},
+{"name":"NoSQL"
+,"children": [
+{"name":"MongoDb", "size": 1},
+{"name":"HBase", "size": 1},
+{"name":"Neo4j", "size": 1}
+]}
+]},
+{"name":"ETL"
+,"children": [
+{"name":"Talend", "size": 1},
+{"name":"SSIS", "size": 1},
+{"name":"Spark", "size": 1},
+{"name":"HDFS", "size": 1}
+]},
+{"name":"Spreadsheets"
+,"children": [
+{"name":"Excel", "size": 1},
+{"name":"Google Sheets", "size": 1}
+]},
+{"name":"Visualisation"
+,"children": [
+{"name":"Google Data Studio", "size": 1},
+{"name":"Qlik Sense", "size": 1},
+{"name":"Tableau", "size": 1},
+{"name":"Power BI", "size": 1}
+]},
+]}
+{"name":"Programming"
+,"children": [
+{"name":"Script"
+,"children": [
+{"name":"Shell Linux", "size": 1}
+]},
+{"name":"Object"
+,"children": [
+{"name":"Python", "size": 1},
+{"name":"Java", "size": 1}
+]},
+{"name":"DB"
+,"children": [
+{"name":"SQL", "size": 1}
+]},
+{"name":"Web"
+,"children": [
+{"name":"Javascript", "size": 1}
+]},
+{"name":"Procedural"
+,"children": [
+{"name":"C", "size": 1}
+]}
+]},
+{"name":"Languages"
+,"children": [
+{"name":"Mother"
+,"children": [
+{"name":"Spanish", "size": 1}
+]},
+{"name":"Foreign"
+,"children": [
+{"name":"English", "size": 1},
+{"name":"French", "size": 1}
+]}
+]},
+{"name":"Method"
+,"children": [
+{"name":"Agile", "size": 1}
+]},
+{"name":"Security"
+,"children": [
+{"name":"Splunk", "size": 1}
+]}
+]}
