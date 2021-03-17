@@ -47,8 +47,7 @@ TODO:
 
 .selector {
 	margin-top: -40px;
-	margin-left: 100px;
-/*	height:30px;*/
+	margin-left: 50px;
 }
 
 body.en span[lang='fr'] {
@@ -60,14 +59,44 @@ body.fr span[lang='en'] {
 }
 
 .flag-img {
-	height:36px;
+	height:33px;
 	padding: 0px;
-    /*background: var(--blue-jeans);*/
+  	margin-top: -5px;
 }
-.flag-btn {
-	height:40px;
-    background: var(--bg-color);
+
+#radios {
+  position: relative;
+  background-color: var(--blue-jeans);
+  z-index: 5;
+  height: 26px;
 }
-.flag-btn:focus {
-	background:var(--button-color);
+input {
+  display: none;
+}
+#bckgrnd, .labels {
+  width: 50px;
+  height: 25px;
+  text-align: center;
+  display: inline-block;
+  margin-right: -3px;
+  cursor: pointer;
+}
+#bckgrnd {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+input:checked ~ #bckgrnd {
+  outline: 1px solid var(--button-color);
+  transition: transform 0.5s ease-in-out;
+}
+
+#rad1:checked ~ #bckgrnd {
+  transform: translateX(0);
+}
+#rad2:checked ~ #bckgrnd {
+  transform: translateX(51px);
+}
+#rad3:checked ~ #bckgrnd {
+  transform: translateX(102px);
 }

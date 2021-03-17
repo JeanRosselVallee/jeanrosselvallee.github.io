@@ -30,6 +30,7 @@ https://templatemo.com/tm-555-upright
 	--sidebar-color:#011E54;
 }
 
+    background: var(--blue-jeans);
 html, body { overflow-x: hidden; }
 body { 
 	font-family: 'Kumbh Sans', sans-serif; 

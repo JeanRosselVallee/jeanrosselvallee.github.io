@@ -44,13 +44,23 @@ TODO:
 
 
                     <!----------------------------------------------------------------- LANGUAGE Selector ----->
-                    <div class="row selector">
-                        <button class="flag-btn" onclick="document.body.className='en'">
-                            <img src="https://www.countryflags.io/GB/shiny/64.png" alt="English" title="English" class="flag-img">
-                        </button>
-                        <button autofocus class="flag-btn" onclick="document.body.className='fr'">
-                            <img src="https://www.countryflags.io/FR/shiny/64.png" alt="Français" title="Français" class="flag-img">
-                        </button>
+                    <div id="radios" class="selector">
+
+                      <input id="rad1" type="radio" name="radioBtn">
+                      <label class="labels" for="rad1">
+                        <img src="https://www.countryflags.io/GB/shiny/64.png" alt="English" title="English" class="flag-img" onclick="document.body.className='en'">
+                      </label>
+
+                      <input id="rad2" type="radio" name="radioBtn" checked>
+                      <label class="labels" for="rad2">
+                        <img src="https://www.countryflags.io/FR/shiny/64.png" alt="Français" title="Français" class="flag-img" onclick="document.body.className='fr'">
+                      </label>
+
+                      <input id="rad3" type="radio" name="radioBtn">
+                      <label class="labels" for="rad3">
+                        <img src="https://www.countryflags.io/ES/shiny/64.png" alt="Español" title="Español" class="flag-img">
+                      </label>
+                      <div id="bckgrnd"></div>
                     </div>
 
                     <div class="logo">
@@ -154,7 +164,7 @@ TODO:
                                 <br> Feel free to contact me for more information.<br><br>
                             </span>
                             <span lang="fr"><h4>Bienvenue!</h4> 
-                                Vous trouverez ici une de projecs et d'astuces pour vous initier au Big Data.
+                                Vous trouverez ici une de série de projets et d'astuces pour vous initier au Big Data.
                                 <br> N'hésitez pas à me contacter pour plus d'infos.<br><br>
                             </span>
                         <div class="row">
