@@ -300,6 +300,18 @@ hr { border-top: 4px solid #CCC; }
 .tm-gallery-link.active { color: var(--text-color); }
 .tm-gallery-link-icon { width: 25px; }
 
+
+@media (max-device-width : 450px) {
+	.tm-gallery-link {
+		padding: 10px;
+	}
+
+	.tm-gallery-links li {
+		margin-bottom: 5px;
+		margin-right: 9px;
+	}
+}
+
 .tm-paging {
 	margin-top: 35px;
 	overflow: auto;

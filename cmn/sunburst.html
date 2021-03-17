@@ -3,18 +3,35 @@
 
 <head>
 
+    <link rel="stylesheet" href="../css/template.css">
 	<link rel="stylesheet" type="text/css" href="../css/sunburst.css">
+	<link rel="stylesheet" href="../fontawesome/css/all.min.css">
 
     <script src='https://d3js.org/d3.v4.min.js'></script>
 
 </head>
 
-<body>    
+<header>
+    <div class="tm-about-text">
+        <h3 class="mb-3 tm-text-primary tm-about-title">Jean's Skills</h3>
+        <h4 class="tm-text-secondary tm-about-subtitle">Try this interactive Sunburst chart that shows skills grouped by fields. </h4>
+    </div>
+</header>
+
+<body>  
 
     <svg id="sunburst1">
     </svg>
 
+    <div>
+    	<b>Instructions</b>: click on a field to zoom-in and then on the inner circle to zoom-out.<br><br>
+    </div>
 </body>
+
+<footer>
+    This Javascript program uses library D3 to generate an SVG graph (Scalable Vector Graphics).<br><br>
+	Copyright <i class="far fa-copyright"></i> 2021 Jean Vallee
+</footer>
 
 <script type="text/javascript" src="../js/sunburst.js"></script>
 

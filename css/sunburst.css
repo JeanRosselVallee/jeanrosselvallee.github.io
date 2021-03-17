@@ -2,6 +2,8 @@ body {
   font-family: Sans-serif;
   font-size: 1em;
   background-color: black;
+  color: white;
+  text-align: center;
 }
 
 .slice {
@@ -46,4 +48,7 @@ textPath {
     height: 100%;
   }
 
+}
+
+footer {
 }

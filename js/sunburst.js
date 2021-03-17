@@ -48,16 +48,16 @@ const textFits = d => {
 
 /* const svg = d3.select('body').append('svg') */
 const svg = d3.select('#sunburst1')
-    .style('width', '80vw')
+    .style('width', '85vw')
     // .style('width', '100%')
     // .style('height', '100%')
-    .style('height', '100vh')
+    .style('height', '75vh')
     /* .attr('viewBox', `${-width / 2} ${-height / 2} ${width} ${height}`)*/
     .attr('viewBox', `${-width / 2-10} ${-height / 2} ${width} ${height}`)
     .on('click', () => focusOn()); // Reset zoom on canvas click
 
 /* d3.json('https://gist.githubusercontent.com/mbostock/4348373/raw/85f18ac90409caa5529b32156aa6e71cf985263f/flare.json', (error, root) => { */
-d3.json('https://jeanrosselvallee.github.io/doc/sequences.json', (error, root) => {
+d3.json('https://jeanrosselvallee.github.io/doc/sunburst.json', (error, root) => {
     if (error) throw error;
 
     root = d3.hierarchy(root);

@@ -5,7 +5,7 @@ TODO:
 - file add description
 
  -->
-<html lang="en">
+<html lang="fr">
 
 <!-- TemplateMo 555 Upright - https://templatemo.com/tm-555-upright -->
 
@@ -18,22 +18,19 @@ TODO:
                                                                 <!-- https://fonts.google.com/specimen/Kumbh+Sans -->
     <link rel="stylesheet" href="fontawesome/css/all.min.css">  <!-- https://fontawesome.com/-->  
     <link rel="stylesheet" href="css/magnific-popup.css">       <!-- https://dimsemenov.com/plugins/magnific-popup/ -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">        <!-- https://getbootstrap.com/ -->
+    <link rel="stylesheet" href="css/bootstrap.min.css"   >        <!-- https://getbootstrap.com/ -->
     <link rel="stylesheet" href="slick/slick.min.css">          <!-- https://kenwheeler.github.io/slick/ -->
     <link rel="stylesheet" href="slick/slick-theme.css">
-    <link rel="stylesheet" href="css/templatemo-upright.css">
+    <link rel="stylesheet" href="css/template.css">
     <link rel="shortcut icon" href="img/avatar.png">                             <!--======= FavIcon ===-->
-
-    <link as="fetch" rel="preload" href="/page-data/embed-jsfiddle-code-web-pages/page-data.json?v=1" crossorigin="anonymous">
-    <style data-linaria-critical="/embed-jsfiddle-code-web-pages/"></style>
-    <link rel="canonical" key="https://www.sitepoint.com/embed-jsfiddle-code-web-pages/" href="https://www.sitepoint.com/embed-jsfiddle-code-web-pages/" data-react-helmet="true">
 
     <link rel="stylesheet" href="css/portfolio.css">
 
 </head>
 <!--------------------------------------------------------------------------------------- HEAD end ------->
 
-<body>    
+<body class="fr">   
+
     <div class="container-fluid">
         <div class="row">
 
@@ -45,10 +42,24 @@ TODO:
                         <i class="fas fa-bars"></i>                             <!--==== Hide Button ===-->
                     </button>
 
+
+                    <!----------------------------------------------------------------- LANGUAGE Selector ----->
+                    <div class="row selector">
+                        <button class="flag-btn" onclick="document.body.className='en'">
+                            <img src="https://www.countryflags.io/GB/shiny/64.png" alt="English" title="English" class="flag-img">
+                        </button>
+                        <button autofocus class="flag-btn" onclick="document.body.className='fr'">
+                            <img src="https://www.countryflags.io/FR/shiny/64.png" alt="Français" title="Français" class="flag-img">
+                        </button>
+                    </div>
+
                     <div class="logo">
                         <div>                                                        <!--==== Avatar ===-->
                             <div><img src="img/avatar.png" class="avatar" alt="Avatar"/></div>           
-                            <div class="my-name">Jean VALLEE</div>  
+                            <div class="my-name">Jean 
+                                <span lang="en">VALLEE</span>
+                                <span lang="fr">VALLÉE</span>
+                            </div>  
                         </div>
                         <hr class="tm-hr-short">
 
@@ -58,21 +69,24 @@ TODO:
                                 <a href="#home" class="nav-link current">
                                     <div class="triangle-right"></div>
                                     <i class="fas fa-home nav-icon"></i>
-                                    Home
+                                    <span lang="en">Home</span>
+                                    <span lang="fr">Accueil</span>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a href="#gallery" class="nav-link">
                                     <div class="triangle-right"></div>
                                     <i class="fas fa-chart-bar nav-icon"></i>
-                                    Projects
+                                    <span lang="en">Projects</span>
+                                    <span lang="fr">Projets</span>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a href="#about" class="nav-link">
                                     <div class="triangle-right"></div>
                                     <i class="fas fa-user nav-icon"></i>
-                                    About
+                                    <span lang="en">Resume</span>
+                                    <span lang="fr">CV</span>
                                 </a>
                             </li>
                         </ul>
@@ -86,33 +100,33 @@ TODO:
                         </a>
                         <ul class="tm-contact-social">              <!--======= Social Links ===-->
 
-                            <li>
+                            <li>           <!-- cf. https://fontawesome.com/icons?d=gallery -->
                                 <a href="https://www.linkedin.com/in/jean-vallee-big-data/?locale=fr_FR" class="tm-social-link">
-                                    <i class="fab fa-linkedin"></i>     
-                                </a>           <!-- cf. https://fontawesome.com/icons?d=gallery -->
+                                    <i class="fab fa-linkedin" title="LinkedIn"></i>     
+                                </a>
                             </li>
 
                             <li>
                                 <a href="https://fb.com/templatemo" class="tm-social-link">
-                                    <i class="fab fa-facebook"></i>
+                                    <i class="fab fa-facebook" title="Facebook"></i>
                                 </a>
                             </li>
 
                             <li>
                                 <a href="https://twitter.com" class="tm-social-link">
-                                    <i class="fab fa-twitter"></i>
+                                    <i class="fab fa-twitter" title="Twitter"></i>
                                 </a>
                             </li>
 
                             <li>
                                 <a href="https://https://github.com/JeanRosselVallee/" class="tm-social-link">
-                                    <i class="fab fa-github"></i>
+                                    <i class="fab fa-github" title="GitHub"></i>
                                 </a>
                             </li>
 
                             <li>
                                 <a href="https://www.codingame.com/profile/31fb1010c1a7ec76cd36dc9208b34d202526552/achievements" class="tm-social-link">
-                                    <img src="img/codingame.svg" width=75%></i>
+                                    <img src="img/codingame.svg" width=75% title="CodinGame"></i>
                                 </a>
                             </li>
 
@@ -126,17 +140,23 @@ TODO:
 
             <!----------------------------------------------------------------- CONTENT AREA begin ------->
             <div class="tm-main">
-
                 <!--=================================================================== HOME section ===-->
                 <div class="tm-section-wrap">
                     <!-- <div class="tm-parallax" data-parallax="scroll" data-image-src="img/img-01.jpg"></div>                    -->
                     <section id="home" class="tm-section">
-                        <h2 class="tm-text-primary">&nbsp&nbsp&nbsp Big Data Portfolio </h2>
+                        <h2 class="tm-text-primary">&nbsp&nbsp&nbsp
+                            <span lang="en">Big Data Portfolio</span>
+                            <span lang="fr">Portfolio Big Data</span>
+                        </h2>
                         <hr class="tm-hr-long mb-5">
-                                <p>
-                                    <h4>Welcome!</h4> You will find here a series of projects and tips to introduce you to Big Data.
-                                    <br> Feel free to contact me for more information.
-                                </p>
+                            <span lang="en"><h4>Welcome!</h4> 
+                                You will find here a series of projects and tips to introduce you to Big Data.
+                                <br> Feel free to contact me for more information.<br><br>
+                            </span>
+                            <span lang="fr"><h4>Bienvenue!</h4> 
+                                Vous trouverez ici une de projecs et d'astuces pour vous initier au Big Data.
+                                <br> N'hésitez pas à me contacter pour plus d'infos.<br><br>
+                            </span>
                         <div class="row">
                             <div class="col-lg-6 tm-col-home mb-4">
                                 <div class="tm-text-container">
@@ -150,12 +170,19 @@ TODO:
                             <div class="col-lg-6 tm-col-home mb-4">
                                 <div class="tm-text-container">
                                     <div class="text-right">
-                                        <a href="#gallery" class="btn btn-primary tm-btn-next">View Projects</a>
+                                        <a href="#gallery" class="btn btn-primary tm-btn-next">
+                                            <span lang="en">View Projects</span>
+                                            <span lang="fr">Voir les projets</span>                                            
+                                        </a>
                                     </div>                                    
                                 </div>
                                 <div>
                                     <br><br>
-                                    <cite><q>If you can't explain it simply, you don't understand it well enough.</q><br> Albert Einstein</cite>
+                                    <cite><q>
+                                        <span lang="en">If you can't explain it simply, you don't understand it well enough.</span>
+                                        <span lang="fr">Si vous ne pouvez expliquer quelque chose simplement, c’est que vous ne l’avez pas bien comprise</span>
+                                    </q><br> Albert Einstein</cite>
+                                    
                                 </div>
                                 <hr class="tm-hr-short mb-5">
                             </div>
@@ -166,15 +193,25 @@ TODO:
                 <div class="tm-section-wrap">
                     <!-- <div class="tm-parallax" data-parallax="scroll" data-image-src="img/img-02.jpg"></div>                    -->
                     <section id="gallery" class="tm-section">
-                        <h2 class="tm-text-primary">&nbsp&nbsp&nbsp Projects & Tips</h2>
-                        <hr class="mb-5">
+                        <h2 class="tm-text-primary">&nbsp&nbsp&nbsp 
+                            <span lang="en">Projects & Tips</span>
+                            <span lang="fr">Projets & astuces</span>
+                        </h2>
+                        <hr>
 
                         <!--............................................ GALLERY FILTERS sub-section ...-->
                         <ul class="tm-gallery-links">
                             <li>
                                 <a href="javascript:void(0);" class="active tm-gallery-link" data-filter="*">
                                     <i class="fas fa-layer-group tm-gallery-link-icon"></i>
-                                    All
+                                    <span lang="en">All</span>
+                                    <span lang="fr">Tout</span>
+                                </a>
+                            </li>
+                            <li title="a notebook contains text, code in Python and results as tables and graphs">
+                                <a href="javascript:void(0);" class="tm-gallery-link" data-filter="notebooks">
+                                    <i class="fas fa-scroll tm-gallery-link-icon"></i>
+                                    Notebooks
                                 </a>
                             </li>
                             <li title="Extraction-Transformation-Loading data processing">
@@ -198,17 +235,13 @@ TODO:
                             <li title="tips on how to use Data tools">
                                 <a href="javascript:void(0);" class="tm-gallery-link" data-filter="tips">
                                     <i class="fas fa-lightbulb tm-gallery-link-icon"></i>
-                                    Tips
-                                </a>
-                            </li>
-                            <li title="a notebook contains text, code in Python and results as tables and graphs">
-                                <a href="javascript:void(0);" class="tm-gallery-link" data-filter="notebooks">
-                                    <i class="fas fa-scroll tm-gallery-link-icon"></i>
-                                    Notebooks
+                                    <span lang="en">Tips</span>
+                                    <span lang="fr">Astuces</span>
                                 </a>
                             </li>
                         </ul>
 
+                        <br>
                         <!--............................................. PROJECT LINKS sub-section ...-->
                         <div class="tm-gallery">
 
@@ -239,15 +272,23 @@ TODO:
                                             </li>
                                             <li>
                                                 <a  class="mfp-pop mfp-iframe"
-                                                    href="https://nbviewer.jupyter.org/urls/jeanrosselvallee.github.io/jupy/COVID-CompareDailyDeathsAsPercentage_link.ipynb?flush_cache=true">Open this notebook
+                                                    href="https://nbviewer.jupyter.org/urls/jeanrosselvallee.github.io/jupy/COVID-CompareDailyDeathsAsPercentage_link.ipynb?flush_cache=true">
+                                                    <span lang="en">Open this notebook</span>
+                                                    <span lang="fr">Ouvrez ce notebook</span>
                                                 </a> 
                                             </li>
                                         </ul>
                                     </figcaption>
                                 </figure>
                                 <div class="tm-about-text">
-                                    <h3 class="mb-3 tm-text-primary tm-about-title">Covid Evolution</h3>
-                                    <h4 class="tm-text-secondary tm-about-subtitle">Comparison considering countries' population</h4>
+                                    <h3 class="mb-3 tm-text-primary tm-about-title">
+                                        <span lang="en">Covid Evolution</span>
+                                        <span lang="fr">Evolution du Covid</span>
+                                    </h3>
+                                    <h4 class="tm-text-secondary tm-about-subtitle">
+                                        <span lang="en">Comparison considering countries' population</span>
+                                        <span lang="fr">Comparaison basée sur la population des pays</span>
+                                    </h4>
                                 </div>
                             </div>
 
@@ -260,7 +301,7 @@ TODO:
                                 </figcaption>           
                             </figure>
                             
-                            <figure class="effect-honey tm-gallery-item tips">
+                            <figure class="effect-honey tm-gallery-item nosql">
                                 <img src="img/gallery/tn/animal-01.jpg" alt="Image"/>
                                 <figcaption>
                                     <h2><i>Dreamy Honey</i></h2>
@@ -303,21 +344,40 @@ TODO:
                         </div>
                     </section>
                     <ul>
-                        <li><b>ETL</b>: Extraction-Transformation-Loading data processing</li>
-                        <li><b>Viz</b>: Data Visualisation</li>
-                        <li><b>NoSQL</b>: Not Only SQL databases</li>
-                        <li><b>Notebooks</b>: a notebook contains text, code in Python and results as tables and graphs</li>
+                        <li><b>ETL</b>: 
+                            <span lang="en">Extraction-Transformation-Loading data processing</span>
+                            <span lang="fr">traitement d'Extraction-Transformation-Chargement de données</span>
+                        </li>
+                        <li><b>Viz</b>: 
+                            <span lang="en">Data Visualisation</span>
+                            <span lang="fr">visualisation de données</span>
+                        </li>
+                        <li><b>NoSQL</b>: 
+                            <span lang="en">Not Only SQL databases</span>
+                            <span lang="fr">bases de données non-structurées</span>
+                        </li>
+                        <li><b>Notebooks</b>: 
+                            <span lang="en">a notebook contains text, code in Python and results as tables and graphs</span>
+                            <span lang="fr">un bloc-notes contient du texte, du code Python et des résultats sous forme de tableaux et graphes</span>
+                        </li>
                     </ul>
                 </div>
                 <!--================================================================== ABOUT section ===-->
                 <div class="tm-section-wrap">
                     <section id="about" class="tm-section">
-                        <h2 class="tm-text-primary">&nbsp&nbsp&nbsp CV - Data Engineer</h2>
-                        <hr class="mb-5">
+                        <h2 class="tm-text-primary">&nbsp&nbsp&nbsp 
+                            <span lang="en">Resume</span>
+                            <span lang="fr">CV</span>
+                        </h2>
+                        <h4>&nbsp&nbsp&nbsp&nbsp
+                            <span lang="en">Big Data Engineer</span>
+                            <span lang="fr">Ingénieur Big Data</span>                              
+                        </h4>
+                        <hr>
 
-                        <div class="row">
+                        <div class="row">  
                             <div class="col-xl-6 tm-contact-col-l mb-4">
-                                <ul class="tm-contact-social">
+                                <ul class="tm-contact-social" title="Email">
                                     <li>                               <!--======= Social Links ===-->
                                         <a href="mailto:jean.vallee@gmx.fr">
                                             <img src="img/mail.png">
@@ -325,27 +385,31 @@ TODO:
                                     </li>&nbsp
                                     <li>
                                         <a href="https://www.linkedin.com/in/jean-vallee-big-data/?locale=fr_FR" class="tm-social-link">
-                                            <i class="fab fa-linkedin"></i>  
-                                        </a> 
+                                            <i class="fab fa-linkedin" title="LinkedIn"></i>     
+                                        </a>
                                     </li>
+
                                     <li>
                                         <a href="https://fb.com/templatemo" class="tm-social-link">
-                                            <i class="fab fa-facebook"></i>
+                                            <i class="fab fa-facebook" title="Facebook"></i>
                                         </a>
                                     </li>
+
                                     <li>
                                         <a href="https://twitter.com" class="tm-social-link">
-                                            <i class="fab fa-twitter"></i>
+                                            <i class="fab fa-twitter" title="Twitter"></i>
                                         </a>
                                     </li>
+
                                     <li>
                                         <a href="https://https://github.com/JeanRosselVallee/" class="tm-social-link">
-                                            <i class="fab fa-github"></i>
+                                            <i class="fab fa-github" title="GitHub"></i>
                                         </a>
                                     </li>
+
                                     <li>
                                         <a href="https://www.codingame.com/profile/31fb1010c1a7ec76cd36dc9208b34d202526552/achievements" class="tm-social-link">
-                                            <img src="img/codingame.svg" width=75%></i>
+                                            <img src="img/codingame.svg" width=75% title="CodinGame"></i>
                                         </a>
                                     </li>
                                 </ul>
@@ -359,10 +423,26 @@ TODO:
                                     <figure class="effect-honey tm-gallery-item tips">
                                         <img src="img/sunburst.gif" alt="Image"/>
                                         <figcaption>
-                                            <h2><i>View Skills</i></h2>
-                                            <a href="cmn/sunburst.html">View more</a>
+                                            <h2><i>
+                                                <span lang="en">View Skills</span>
+                                                <span lang="fr">Voir les compétences</span>
+                                            </i></h2>
+                                            <a href="cmn/sunburst.html">
+                                                <span lang="en">View more</span>
+                                                <span lang="fr">Voir plus ...</span>
+                                            </a>
                                         </figcaption>           
                                     </figure> 
+                                    <div class="tm-about-text">
+                                        <h3 class="mb-3 tm-text-primary tm-about-title">
+                                            <span lang="en">Technical Skills</span>
+                                            <span lang="fr">Compétences</span>
+                                        </h3>
+                                        <h4 class="tm-text-secondary tm-about-subtitle">
+                                            <span lang="en">Big Data, Visualisation, NoSQL, Programming</span>
+                                            <span lang="fr">Big Data, visualisation, NoSQL, programmation</span>
+                                        </h4>
+                                    </div>
                                 </div>
                             </div>
 
@@ -377,102 +457,162 @@ TODO:
 
                             <div class="row tm-row-about">
                                 <div class="cv-p col-xl-6 tm-contact-col-l mb-4">
-                                    <h5 class="cv-heading">&nbsp Courte biographie</h5>
-                                    &nbsp Je suis né au <b class=cv-name>Pérou</b> et suis venu en France pour suivre des études supérieures.
-                                    <br>
-                                    &nbsp Après avoir travaillé pour <b class=cv-name>3 ESN</b> et intégré différentes équipes, 
-                                    je souhaite travailler sur des projets innovateurs et complexes du <b class=cv-name>Big Data</b> 
-                                    et contribuer à la simplification et à l’automatisation de tâches.
-                                    <br>
-                                    &nbsp Passionné par la <b class=cv-name>programmation</b>, j’aime trouver des solutions optimales, 
-                                    apprendre et m’améliorer en permanence.
+                                    <h5 class="cv-heading">&nbsp 
+                                        <span lang="en">My story</span>
+                                        <span lang="fr">Courte biographie</span>
+                                    </h5>
+                                    <span lang="en">
+                                        &nbsp I was born in <b class=cv-name>Peru</b> and came to France to pursue studies in higher education.
+                                        <br>
+                                        &nbsp I have worked for <b class=cv-name>3 IT services companies</b> where I joined different teams. 
+                                        Now I would like to work in innovative and complex projects in <b class=cv-name>Big Data</b> 
+                                        and also to offer my help on making tasks easier to perform by automating them.
+                                        <br>
+                                        &nbsp I am motivated by <b class=cv-name>programing</b>, and love to find optimal solutions, 
+                                        to continuously learn and improve my skills.
+                                        
+                                    </span>
+                                    <span lang="fr">
+                                        &nbsp Je suis né au <b class=cv-name>Pérou</b> et suis venu en France pour suivre des études supérieures.
+                                        <br>
+                                        &nbsp Après avoir travaillé pour <b class=cv-name>3 ESN</b> et intégré différentes équipes, 
+                                        je souhaite travailler sur des projets innovateurs et complexes du <b class=cv-name>Big Data</b> 
+                                        et contribuer à la simplification et à l’automatisation de tâches.
+                                        <br>
+                                        &nbsp Passionné par la <b class=cv-name>programmation</b>, j’aime trouver des solutions optimales, 
+                                        apprendre et m’améliorer en permanence.
+                                    </span>
                                 </div>
 
                                 <div class="cv-p col-xl-6 tm-contact-col-l mb-4">
-                                    <h5 class="cv-heading">&nbsp Personnel</h5>
-                                    <h2> &nbsp &nbsp &nbsp &#127955; &#127939; &#127946; &#129354; &#129406; &#127969; </h2>
-                                    <br>
-                                    &nbsp Pour contre-balancer le travail sédentaire, j’aime pratiquer des sports dynamiques 
-                                    comme la course à pied et les sports de combat. 
-                                    <br>
-                                    &nbsp Lorsque j’ai un peu de temps libre, j’aime aller dans la nature en famille ou 
-                                    m’occuper de mon jardin et de la rénovation de ma maison.
+                                    <h5 class="cv-heading">&nbsp 
+                                        <span lang="en">My hobbies</span>
+                                        <span lang="fr">Personnel</span>
+                                    </h5>                                    
+                                    <h2> &#127955;&#127939;&#127946;&#129354;&#129406;&#127969; </h2>
+                                    <span lang="en">
+                                        &nbsp To counter-balance the sedentary office work, I like to practice dynamic sports 
+                                        such as running and martial arts. 
+                                        <br>
+                                        &nbsp In my leisure time, I like to go out for a walk with my family or 
+                                        to work in my garden and in the renovation of my house.
+                                    </span>
+                                    <span lang="fr">
+                                        &nbsp Pour contre-balancer le travail sédentaire, j’aime pratiquer des sports dynamiques 
+                                        comme la course à pied et les sports de combat. 
+                                        <br>
+                                        &nbsp Lorsque j’ai un peu de temps libre, j’aime aller dans la nature en famille ou 
+                                        m’occuper de mon jardin et de la rénovation de ma maison.
+                                    </span>
                                 </div>
 
-                                <div class="cv-p col-xl-6 tm-contact-col-l mb-4">
-                                    <h5 class="cv-heading">&nbsp Formation</h5>
+                                <div class="cv-p col-xl-6 tm-contact-col-l mb-4">                                    
+                                    <h5 class="cv-heading">&nbsp 
+                                        <span lang="en">Education</span>
+                                        <span lang="fr">Formation</span>
+                                    </h5>                                 
+
                                     <p>
-                                        <b class=cv-date>2020-2021</b><br>
+                                        <b class=cv-date>2020-2021</b><br></span>
                                         <a href="https://www.m2iformation.fr/actualite/formation-big-data-intelligence-artificielle-300919/">
-                                            <u class=cv-name>Consultant Big Data</u><br>
+                                            <u class=cv-name>
+                                                <span lang="en">Big Data Consultant</span>
+                                                <span lang="fr">Consultant Big Data</span>
+                                            </u><br>
                                         </a>
                                         M2I Formation, Montpellier
                                     </p>
+
                                     <p>
                                         <b class=cv-date>2016</b><br>
                                         <a href="https://www.dundee.ac.uk/postgraduate/data-engineering">
                                             <u class=cv-name>MSc Big Data Engineering</u><br>
                                         </a>
-                                        Université de Dundee, Ecosse
+                                        <span lang="en">Dundee University, Scotland</span>
+                                        <span lang="fr">Université de Dundee, Ecosse</span>
                                     </p>
                                     <p>
                                         <b class=cv-date>2003</b><br>
                                         <a href="https://www.imt-atlantique.fr/fr/documents/fiche-mastere-specialise-ingenierie-des-systemes-informatiques-communicants">
-                                            <u class=cv-name>MS Ingénierie de Systèmes Communicants</u><br>
+                                            <u class=cv-name>
+                                                <span lang="en">Post-Masters Certificate in Distributed Computer Systems</span>
+                                                <span lang="fr">MS Ingénierie de Systèmes Communicants</span>
+                                            </u><br>
                                         </a>
                                         IMT Atlantique – Brest
                                     </p>
                                     <p>
                                         <b class=cv-date>1997</b><br>
                                         <a href="https://www.ece.fr/ecole-ingenieur/ece-paris/">
-                                            <u class=cv-name>Diplôme d'ingénieur</u><br>
+                                            <u class=cv-name>
+                                                <span lang="en">Postgraduate Engineer degree</span>
+                                                <span lang="fr">Diplôme d'ingénieur</span>
+                                            </u><br>
                                         </a>
                                         ECE – Paris
                                     </p>
                                 </div>
 
                                 <div class="cv-p col-xl-6 tm-contact-col-l mb-4">
-                                    <h5 class="cv-heading">&nbsp Expérience  &nbsp &nbsp &nbsp
+                                    <h5 class="cv-heading">&nbsp 
+                                        <span lang="en">Employment</span>
+                                        <span lang="fr">Expérience</span>  
+                                        &nbsp &nbsp &nbsp
                                         <img src="img/capgemini.svg" class="cv-logo" width=100px>&nbsp
                                         <img src="img/gfi.png" class="cv-logo" width=50px> 
                                     </h5>
                                     <p>
                                         <b class=cv-date>2018-2019</b>
-                                        <br>ESN 
+                                        <br>
+                                        <span lang="en">IT Consultancy </span>
+                                        <span lang="fr">ESN</span>  
                                         <a href="https://www.linkedin.com/company/gfiworld/">
                                             <u class=cv-name> GFI</u><br>
                                         </a>
-                                        DEVELOPPEUR Web
+                                        <span lang="en">Web DEVELOPPER</span>
+                                        <span lang="fr">DEVELOPPEUR Web</span>  
                                     </p>
                                     <p>
-                                        <b class=cv-date>2016</b><br>Stage chez 
+                                        <b class=cv-date>2016</b><br>
+                                        <span lang="en">Internship at </span>
+                                        <span lang="fr">Stage chez </span>  
                                         <a href="https://waracle.com/locations/dundee/">
                                             <u class=cv-name>Waracle</u><br>
                                         </a>
-                                        DÉVELOPPEUR en Data Viz
+                                        <span lang="en">Data Viz DEVELOPPER</span>
+                                        <span lang="fr">DÉVELOPPEUR en Data Viz</span>  
                                     </p>
                                     <p>
                                         <b class=cv-date>2013-2015</b>
-                                        <br>ESN 
+                                        <br>
+                                        <span lang="en">IT Consultancy </span>
+                                        <span lang="fr">ESN</span>  
                                         <a href="https://www.linkedin.com/company/uniware-global-services/">
                                             <u class=cv-name> Uniware &nbsp</u><br>
                                         </a>
-                                        CONSULTANT polyvalent
+                                        <span lang="en">Versatile CONSULTANT</span>
+                                        <span lang="fr">CONSULTANT polyvalent</span>
                                     </p>
                                     <p>
-                                        <b class=cv-date>2011</b><br>Stage chez 
+                                        <b class=cv-date>2011</b><br>
+                                        <span lang="en">Internship at </span>
+                                        <span lang="fr">Stage chez </span>   
                                         <a href="https://www.augeo.com/fr/produits#section-planzone">
                                             <u class=cv-name> Augeo</u><br>
                                         </a>
-                                        DÉVELOPPEUR en Javascript
+                                        <span lang="en">Javascript DEVELOPPER</span>
+                                        <span lang="fr">DÉVELOPPEUR en Javascript</span>
                                     </p>
                                     <p>
                                         <b class=cv-date>1998-2009</b>
-                                        <br>ESN 
+                                        <br>
+                                        <span lang="en">IT Consultancy </span>
+                                        <span lang="fr">ESN</span>  
                                         <a href="https://www.linkedin.com/company/capgemini/">
                                             <u class=cv-name>Cap Gemini &nbsp</u><br>
                                         </a>
-                                        CONSULTANT polyvalent
+                                        <span lang="en">Versatile CONSULTANT</span>
+                                        <span lang="fr">CONSULTANT polyvalent</span>
                                     </p>
                                 </div>
                             </div>
@@ -486,7 +626,9 @@ TODO:
                 <div class="tm-section-wrap tm-copyright row">
                     <div class="col-12">
                         <div class="text-right">
-                            Copyright <i class="far fa-copyright"></i> 2021 Jean Vallee
+                            Copyright <i class="far fa-copyright"></i> 2021 Jean 
+                            <span lang="en">Vallee</span>
+                            <span lang="fr">Vallée</span> 
                         </div> 
                     </div>
                 </div>                 

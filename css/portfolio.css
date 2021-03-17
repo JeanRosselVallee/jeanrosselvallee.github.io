@@ -44,3 +44,30 @@ TODO:
 		z-index: 1;
 	}
 }
+
+.selector {
+	margin-top: -40px;
+	margin-left: 100px;
+/*	height:30px;*/
+}
+
+body.en span[lang='fr'] {
+	display:none;
+}
+
+body.fr span[lang='en'] {
+	display:none;
+}
+
+.flag-img {
+	height:36px;
+	padding: 0px;
+    /*background: var(--blue-jeans);*/
+}
+.flag-btn {
+	height:40px;
+    background: var(--bg-color);
+}
+.flag-btn:focus {
+	background:var(--button-color);
+}
