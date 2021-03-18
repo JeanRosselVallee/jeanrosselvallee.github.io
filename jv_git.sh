@@ -1,7 +1,7 @@
 # Goal: push code changed by a single coder
 
 # Arguments
-COMMENT=$1
+COMMENT="$1"
 NB_PARAMS=$#
 
 # Input Values
@@ -43,8 +43,8 @@ fi
 # Launch git add -> commit -> push 
 for CMDn in "$CMD1" "$CMD2" "$CMD3"
 	do
-		echo $CMDn
-		$CMDn
+		echo "$CMDn"
+		eval $CMDn
 		if [ $? -ne 0 ]
 			then 
 				echo "ERROR: Command interrupted"
