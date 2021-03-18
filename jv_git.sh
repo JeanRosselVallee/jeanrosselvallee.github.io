@@ -13,7 +13,7 @@ NB_SECONDS=` expr $NB_HOURS \* 3600 `
 # Commands list
 CMD0="git config credential.helper 'cache --timeout=$NB_SECONDS'"
 CMD1="git add . "
-CMD2="git commit -m \"$COMMENT\" "
+CMD2="git commit -m '$COMMENT' "
 CMD3="git push "
 
 # SYNTAX
