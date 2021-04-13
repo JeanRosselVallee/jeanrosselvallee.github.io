@@ -1,3 +1,6 @@
 [submodule "jupyter"]
 	path = jupyter
 	url = https://github.com/JeanRosselVallee/jupyter
+[submodule "DataViz"]
+	path = DataViz
+	url = https://github.com/JeanRosselVallee/DataViz.git
