@@ -1,6 +1,9 @@
 /*
 TODO: 
 */
+body {
+	background-color: black !important;
+}
 
 :root {
 	--bg-color:		#000000;
