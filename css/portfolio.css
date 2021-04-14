@@ -11,6 +11,16 @@ body {
 	--hover-color: 	#FC8408;
 	--text-color: 	#FFFFFF;
 	--blue-jeans:	#011E54;
+
+	--yellow:#FFCE1E;
+	--light-yellow:#000000;
+	--dark-yellow:#000000;
+	--orange:#000000;
+	--light-orange:#000000;
+	--dark-orange:#000000;
+	--blue:#000000;
+	--light-blue:#000000;
+	--dark-blue:#000000;
 }
 .cv-heading { 
 	/* font-family: 'Kumbh Sans', sans-serif; */
@@ -102,4 +112,14 @@ input:checked ~ #bckgrnd {
 }
 #rad3:checked ~ #bckgrnd {
   transform: translateX(102px);
+}
+
+.title {
+  color: black;
+  background-color: var(--yellow);
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 20px;
+  padding-bottom: 15px;
 }
