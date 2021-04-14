@@ -6,21 +6,14 @@ body {
 }
 
 :root {
-	--bg-color:		#000000;
-	--button-color: #FFCE1E;
-	--hover-color: 	#FC8408;
-	--text-color: 	#FFFFFF;
 	--blue-jeans:	#011E54;
 
-	--yellow:#FFCE1E;
-	--light-yellow:#000000;
-	--dark-yellow:#000000;
-	--orange:#000000;
-	--light-orange:#000000;
-	--dark-orange:#000000;
-	--blue:#000000;
-	--light-blue:#000000;
-	--dark-blue:#000000;
+	--yellow:#fbec46;
+	--light-yellow:#fffc9d;
+	--dark-yellow:#febd3c;
+	--blue:#009999;
+	--light-blue:#8cf4ff;
+	--dark-blue:#011E54;
 }
 .cv-heading { 
 	/* font-family: 'Kumbh Sans', sans-serif; */
@@ -37,7 +30,7 @@ body {
 	/*color: #8cf4ff; */
 }
 .cv-name { 
-	color: #8cf4ff; 
+	color: var(--yellow); 
 }
 
 .cv-logo { 
@@ -63,11 +56,11 @@ body {
 	margin-left: 50px;
 }
 
-body.en span[lang='fr'] {
+body.en *[lang='fr'] {
 	display:none;
 }
 
-body.fr span[lang='en'] {
+body.fr *[lang='en'] {
 	display:none;
 }
 
@@ -116,10 +109,14 @@ input:checked ~ #bckgrnd {
 
 .title {
   color: black;
-  background-color: var(--yellow);
+  background-color: var(--dark-yellow);
   font-size: 2rem;
   text-align: center;
   font-weight: bold;
   padding-top: 20px;
   padding-bottom: 15px;
+}
+
+q {
+	color: var(--yellow);
 }
